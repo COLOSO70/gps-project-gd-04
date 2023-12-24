@@ -3,6 +3,16 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("androidx.navigation.safeargs.kotlin")
     id("com.google.devtools.ksp")
+    id("org.sonarqube") version "4.4.1.3373"
+
+}
+
+sonar {
+    properties {
+        property("sonar.projectKey", "COLOSO70_gps-project-gd-04")
+        property("sonar.organization", "coloso70")
+        property("sonar.host.url", "https://sonarcloud.io")
+    }
 }
 
 android {
